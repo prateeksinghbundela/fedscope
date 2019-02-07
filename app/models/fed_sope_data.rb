@@ -1,0 +1,2 @@
+class FedSopeData < ApplicationRecord
+end
