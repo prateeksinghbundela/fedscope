@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    fedscope (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rubyzip (1.2.2)
+    zip-zip (0.3)
+      rubyzip (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fedscope!
+  zip-zip
+
+BUNDLED WITH
+   1.17.2

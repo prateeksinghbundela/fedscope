@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{test rake}
   spec.description   = %q{test rake}
-  # spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/prateeksinghbundela/fedscope"
   spec.license       = "MIT"
 
   # spec.bindir        = "exe"
