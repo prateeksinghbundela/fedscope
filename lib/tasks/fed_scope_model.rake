@@ -4,12 +4,12 @@ namespace :fed_data_model do
   	puts "adding model"
 
     puts "running migration"
-    system "rsync -ruv --exclude=.svn ../../app/models app/"
+    system "rsync -ruv --exclude=.svn #{File.expand_path('../../app/models app/', __FILE__)} app/"
 
-    ActiveRecord::Migrator.up("../../db/migrate")
+    ActiveRecord::Migrator.up(File.expand_path('../../db/migrate/', __FILE__))
     puts "Migration done"
   end
   task uninstall: :environment do
-    ActiveRecord::Migrator.down("../../db/migrate")
+    ActiveRecord::Migrator.down(File.expand_path('../../db/migrate/', __FILE__))
   end
 end
